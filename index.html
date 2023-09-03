@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Mi Perfil</h1>
+
+      <img src="/perfil.jpg" width="200" height="200" alt="Foto de perfil" />
+
+      <h2>Información Personal</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Jordy</li>
+        <li><strong>Apellido:</strong> Huansi</li>
+        <li><strong>Edad:</strong> 30</li>
+        <li><strong>Email:</strong> jordy.10.garcia@gmail.com</li>
+      </ul>
+
+      <h2>Descripción</h2>
+      <p>
+        ¡Hola! Soy Jordy, un apasionado de la Programación con un gran interés
+        en Frontend. Siempre estoy buscando nuevas formas de aprender y crecer
+        en optimizar interfaces gráficas.
+      </p>
+
+      <h2>Enlaces</h2>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/jordeveloper/">LinkedIn</a>
+        </li>
+        <li><a href="https://twitter.com/jordydev93">Twitter</a></li>
+        <li>
+          <a href="https://www.instagram.com/jordyjh.estrada/">Instagram</a>
+        </li>
+      </ul>
+
+      <h2>Contacto</h2>
+      <form action="/enviar-mensaje" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          cols="50"
+          required
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+  </body>
+</html>
